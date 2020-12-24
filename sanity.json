@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "project": {
+    "name": "CMS Beispiel Blog"
+  },
+  "api": {
+    "projectId": "ybuy236i",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./parts/deskStructure.js"
+    }
+  ]
+}
