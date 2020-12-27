@@ -1,0 +1,8 @@
+{
+  "parts": [
+    {
+      "implements": "part:@sanity/base/root",
+      "path": "./Root.tsx"
+    }
+  ]
+}
