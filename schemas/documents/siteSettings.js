@@ -2,7 +2,7 @@ export default {
   name: 'siteSettings',
   type: 'document',
   title: 'Startseite (SEO)',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
+  __experimental_actions: ['update', 'create', 'delete', 'publish'],
   fields: [
     {
       name: 'title',
@@ -20,7 +20,7 @@ export default {
       type: 'array',
       title: 'Keywords',
       description: 'Keywords, die den Blog beschreiben',
-      of: [{type: 'string'}],
+      of: [{ type: 'string' }],
       options: {
         layout: 'tags'
       }
@@ -30,7 +30,7 @@ export default {
       type: 'reference',
       description: 'Der Hauptautor des Blogs',
       title: 'Author',
-      to: [{type: 'author'}]
+      to: [{ type: 'author' }]
     }
   ]
 }
